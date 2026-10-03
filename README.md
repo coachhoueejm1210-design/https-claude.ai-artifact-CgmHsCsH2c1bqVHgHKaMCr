@@ -1,6 +1,7 @@
 # Parent Leader : page de vente
 
-- `index.html` : page publiée sur https://claude.ai/artifact/CgmHsCsH2c1bqVHgHKaMCr
+- Site en ligne (Netlify) : https://sparkling-cocada-ae6b81.netlify.app (page + PDF téléchargeables)
+- `index.html` : page, aussi visible sur https://claude.ai/artifact/CgmHsCsH2c1bqVHgHKaMCr (sans téléchargement des PDF)
 - `emails-parent-leader.md` : séquence d'emails et SMS (offre 297 €)
 - PDF : guide « 5 erreurs » et livret offert
 
@@ -11,3 +12,6 @@
 
 ## Avant mise en ligne définitive
 Compléter les mentions légales et la politique de confidentialité (champs surlignés), vérifier les numéros 3020 / 3018 depuis La Réunion.
+
+## Mise à jour du site Netlify
+Déposer le contenu du dossier (index.html + les 2 PDF) dans Netlify, onglet « Deploys ». Le fichier `index.html` du dépôt est un fragment : l'envelopper dans `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>…</body></html>` avant le dépôt.
