@@ -1,6 +1,6 @@
 # Parent Leader : page de vente
 
-- Site en ligne (Netlify) : https://sparkling-cocada-ae6b81.netlify.app (page + PDF téléchargeables)
+- Site en ligne (Netlify) : https://regal-sawine-a2377c.netlify.app (page + PDF téléchargeables)
 - `index.html` : page, aussi visible sur https://claude.ai/artifact/CgmHsCsH2c1bqVHgHKaMCr (sans téléchargement des PDF)
 - `emails-parent-leader.md` : séquence d'emails et SMS (offre 297 €)
 - PDF : guide « 5 erreurs » et livret offert
