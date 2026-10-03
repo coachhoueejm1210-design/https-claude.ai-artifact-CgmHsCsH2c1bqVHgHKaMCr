@@ -1,0 +1,815 @@
+<title>Parent Leader</title>
+<meta name="description" content="Coaching parental à La Réunion pour les parents d'adolescents de 10 à 17 ans, y compris face au harcèlement scolaire. Par Jean-Michel Houée, coach certifié et éducateur spécialisé.">
+<meta name="theme-color" content="#0F3B4C">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Parent Leader : retrouver le lien avec votre ado">
+<meta property="og:description" content="Coaching parental à La Réunion pour les parents d'ados de 10 à 17 ans, y compris face au harcèlement scolaire. Guide gratuit : 5 erreurs qui fragilisent le dialogue.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Parent Leader · Méthode Houée","founder":{"@type":"Person","name":"Jean-Michel Houée","jobTitle":"Coach parental, éducateur spécialisé diplômé d'État"},"areaServed":"La Réunion","address":{"@type":"PostalAddress","addressLocality":"Sainte-Clotilde","addressRegion":"La Réunion","addressCountry":"FR"},"description":"Coaching parental pour parents d'adolescents de 10 à 17 ans, y compris face au harcèlement scolaire."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{
+  --ground:#F5F7F4;
+  --surface:#FFFFFF;
+  --surface-2:#E9EFEC;
+  --ink:#14212B;
+  --ink-soft:#4A5A63;
+  --line:#D5DEDA;
+  --lagon:#0F3B4C;
+  --lagon-ink:#EAF3F2;
+  --flamboyant:#C2411C;
+  --flamboyant-ink:#FFFFFF;
+  --flamboyant-soft:#FBE7DF;
+  --vetiver:#2E6E5E;
+  --focus:#E0892E;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0E171D; --surface:#15222A; --surface-2:#1B2C35; --ink:#E8EEEC; --ink-soft:#A7B6B8;
+    --line:#2A3C45; --lagon:#0A2A36; --lagon-ink:#E3EFEE; --flamboyant:#E86A43; --flamboyant-ink:#1A0E09;
+    --flamboyant-soft:#3A2019; --vetiver:#6DBBA6;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0E171D; --surface:#15222A; --surface-2:#1B2C35; --ink:#E8EEEC; --ink-soft:#A7B6B8;
+  --line:#2A3C45; --lagon:#0A2A36; --lagon-ink:#E3EFEE; --flamboyant:#E86A43; --flamboyant-ink:#1A0E09;
+  --flamboyant-soft:#3A2019; --vetiver:#6DBBA6;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{font-size:17px;-webkit-text-size-adjust:100%}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.6;padding-inline:16px;margin:0}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+.wrap{max-width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.1;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,5.6vw,4.2rem);font-weight:800}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:700}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--flamboyant)}
+.lead{font-size:1.15rem;color:var(--ink-soft);max-width:60ch}
+.muted{color:var(--ink-soft)}
+section{padding-block:clamp(56px,8vw,96px)}
+.stack{display:grid;gap:16px}
+.btn{display:inline-flex;align-items:center;gap:.5em;font:700 1rem/1 var(--body);padding:15px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--flamboyant);color:var(--flamboyant-ink)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-light{background:var(--lagon-ink);color:var(--lagon)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:-16px;padding-inline:16px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{text-decoration:none;display:grid;line-height:1.1}
+.brand b{font-family:var(--display);font-size:1.25rem;font-weight:800}
+.brand small{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.95rem}
+.nav ul a{text-decoration:none;color:var(--ink-soft)}
+.nav ul a:hover{color:var(--ink)}
+.nav .btn{padding:11px 18px;font-size:.92rem}
+@media (max-width:900px){.nav ul{display:none}}
+.nav .btn{white-space:nowrap}
+@media (max-width:420px){.brand small{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(32px,5vw,64px);align-items:center;padding-block:clamp(48px,7vw,88px)}
+.hero h1 em{font-style:normal;color:var(--flamboyant)}
+.hero .stack{gap:24px}
+.proofline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem;color:var(--ink-soft)}
+.proofline span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--vetiver);margin-right:8px;vertical-align:middle}
+.coach-card{background:var(--lagon);color:var(--lagon-ink);border-radius:28px;padding:32px;display:grid;gap:20px;position:relative;overflow:hidden}
+.coach-card::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(232,106,67,.45),transparent 70%)}
+.monogram{flex:none;width:72px;height:72px;border-radius:50%;background:var(--lagon-ink);color:var(--lagon);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:1.6rem}
+.coach-card .who{display:flex;gap:16px;align-items:center}
+.coach-card .who b{font-family:var(--display);font-size:1.3rem;display:block}
+.coach-card .who span{opacity:.8;font-size:.92rem}
+.coach-card ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;position:relative;z-index:1}
+.coach-card li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline}
+.coach-card li strong{font-family:var(--display);font-size:1.35rem;min-width:5.2rem;white-space:nowrap;color:#F6B79E}
+@media (max-width:860px){.hero{grid-template-columns:1fr}}
+
+/* press band */
+.press{background:var(--surface);border-block:1px solid var(--line);margin-inline:-16px;padding-inline:16px}
+.press .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:32px}
+.press-item{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--ground);text-decoration:none;transition:border-color .15s ease}
+.press-item:hover{border-color:var(--flamboyant)}
+.press-item .tag{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vetiver)}
+.press-item h3{margin-block:6px 8px}
+.press-item .go{display:inline-block;margin-top:12px;font-weight:700;color:var(--flamboyant)}
+.cover{width:84px;aspect-ratio:2/3;border-radius:6px;background:linear-gradient(160deg,var(--lagon),#1E5A6E);color:#fff;display:grid;align-content:space-between;padding:10px 8px;font-family:var(--display);font-size:.62rem;line-height:1.15;box-shadow:4px 6px 0 var(--line)}
+.cover b{font-size:.78rem}
+.tv{width:84px;aspect-ratio:4/3;border-radius:10px;background:var(--lagon);display:grid;place-items:center}
+.tv svg{width:34px;height:34px}
+@media (max-width:760px){.press .grid{grid-template-columns:1fr}.press-item{grid-template-columns:1fr}}
+
+/* problems */
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.pain{padding:28px;border-top:3px solid var(--ink);display:grid;gap:10px;align-content:start}
+.pain .q{font-family:var(--display);font-size:1.2rem;font-weight:700}
+@media (max-width:820px){.cols3{grid-template-columns:1fr}}
+
+/* lead magnet */
+.magnet{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,56px);align-items:start;background:var(--flamboyant-soft);border-radius:32px;padding:clamp(28px,5vw,56px)}
+.checks{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 20px}
+.checks li::before{content:"✓";color:var(--vetiver);font-weight:700;margin-right:8px}
+form.card{background:var(--surface);border-radius:22px;padding:28px;display:grid;gap:14px;border:1px solid var(--line)}
+label{font-weight:700;font-size:.92rem}
+input[type=text],input[type=email]{width:100%;font:inherit;padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--ground);color:var(--ink)}
+.consent{display:grid;grid-template-columns:auto 1fr;gap:10px;font-size:.85rem;color:var(--ink-soft);align-items:start}
+.consent input{margin-top:4px;width:18px;height:18px;accent-color:var(--flamboyant)}
+.form-ok{background:var(--surface-2);border-radius:12px;padding:14px;font-weight:700}
+@media (max-width:860px){.magnet{grid-template-columns:1fr}.checks{grid-template-columns:1fr}}
+
+/* program */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--surface)}
+.step{padding:30px;display:grid;gap:14px;align-content:start}
+.step + .step{border-left:1px solid var(--line)}
+.step .n{font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--flamboyant);line-height:1}
+.step ul{margin:0;padding-left:1.1em;color:var(--ink-soft);display:grid;gap:6px}
+@media (max-width:820px){.steps{grid-template-columns:1fr}.step + .step{border-left:0;border-top:1px solid var(--line)}}
+
+/* bullying band */
+.bully{background:var(--lagon);color:var(--lagon-ink);border-radius:32px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,4vw,48px);align-items:center}
+.bully .eyebrow{color:#F6B79E}
+.bully .lead{color:inherit;opacity:.85}
+.bully .links{display:grid;gap:14px}
+.bully a.tile{display:block;padding:20px 22px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);text-decoration:none}
+.bully a.tile:hover{background:rgba(255,255,255,.13)}
+.bully a.tile b{display:block;font-family:var(--display);font-size:1.1rem}
+.bully a.tile span{opacity:.8;font-size:.92rem}
+.urgence{margin-top:8px;font-size:.92rem;opacity:.9}
+.urgence strong{font-family:var(--display);font-size:1.15rem}
+@media (max-width:860px){.bully{grid-template-columns:1fr}}
+
+
+/* apps */
+.apps{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:36px}
+.app{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:28px;display:grid;gap:14px;grid-template-rows:auto auto auto 1fr auto auto}
+.app .for{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vetiver)}
+.a11y{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px;align-content:start}
+.a11y li{font-size:.85rem;font-weight:700;padding:6px 12px;border-radius:999px;background:var(--surface-2)}
+.a11y-banner{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin-top:28px;padding:20px 24px;border-radius:20px;border:2px dashed var(--vetiver)}
+.a11y-banner svg{width:40px;height:40px}
+@media (max-width:820px){.apps{grid-template-columns:1fr}}
+
+/* coach */
+.about{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(28px,5vw,64px);align-items:start}
+.creds{display:grid;gap:0;border-top:1px solid var(--line)}
+.creds div{display:grid;grid-template-columns:9rem 1fr;gap:16px;padding-block:14px;border-bottom:1px solid var(--line)}
+.creds dt{font-weight:700;color:var(--ink-soft);font-size:.9rem;margin:0}
+.creds dd{margin:0}
+.quote{font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.7rem);font-weight:500;line-height:1.3;border-left:4px solid var(--flamboyant);padding-left:20px}
+@media (max-width:860px){.about{grid-template-columns:1fr}.creds div{grid-template-columns:1fr;gap:2px}}
+
+/* webinar */
+.webinar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;padding:clamp(28px,4vw,44px);border:2px solid var(--ink);border-radius:28px}
+.webinar .meta{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.82rem;font-weight:700;padding:6px 12px;border-radius:999px;background:var(--surface-2)}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:40px;align-items:stretch}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:28px;display:grid;gap:18px;align-content:start}
+.plan.best{border:2px solid var(--flamboyant)}
+.plan .badge{background:var(--lagon);color:var(--lagon-ink)}.plan.best .badge{background:var(--flamboyant);color:var(--flamboyant-ink)}
+.plans{max-width:900px;margin-inline:auto}
+.plan .badge{justify-self:start;font-size:.75rem;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--flamboyant);color:var(--flamboyant-ink)}
+.price{font-family:var(--display);font-size:2.6rem;font-weight:800;font-variant-numeric:tabular-nums}
+.price small{font-family:var(--body);font-size:1rem;font-weight:400;color:var(--ink-soft)}
+.plan ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;align-content:start;border-top:1px solid var(--line);padding-top:16px}
+.plan li::before{content:"✓";color:var(--vetiver);font-weight:700;margin-right:8px}
+.plan .btn{justify-content:center}
+@media (max-width:860px){.plans{grid-template-columns:1fr}}
+.paybar{margin-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;padding:18px 22px;border-radius:18px;background:var(--surface-2)}
+.pay{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.pay li{font-size:.85rem;font-weight:700;padding:6px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+
+/* faq */
+.faq{max-width:780px;margin-inline:auto;margin-top:32px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding-block:20px;font-family:var(--display);font-weight:700;font-size:1.1rem;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--flamboyant);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding-bottom:20px;color:var(--ink-soft);max-width:65ch}
+
+/* final */
+.final{text-align:center;display:grid;gap:20px;justify-items:center}
+footer{border-top:1px solid var(--line);padding-block:32px;font-size:.9rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--ink-soft)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* accessibilité */
+.skip{position:absolute;left:-9999px;top:8px;z-index:60;background:var(--ink);color:var(--ground);padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none}
+.skip:focus{left:16px}
+.a11ybar{margin-inline:-16px;padding:6px 16px;background:var(--lagon);color:var(--lagon-ink);font-size:.88rem}
+.a11ybar .in{max-width:var(--wrap);margin-inline:auto;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
+.a11ybar b{margin-right:4px}
+.a11ybar button{font:700 .85rem/1 var(--body);border:1.5px solid rgba(255,255,255,.45);background:transparent;color:inherit;border-radius:8px;padding:7px 10px;cursor:pointer}
+.a11ybar button[aria-pressed="true"]{background:var(--lagon-ink);color:var(--lagon);border-color:var(--lagon-ink)}
+.audiobar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;width:100%;padding:8px 0 4px}
+.audiobar label{display:inline-flex;gap:6px;align-items:center}
+.audiobar select{font:inherit;border-radius:8px;padding:4px 6px}
+.audiobar input[type=checkbox]{width:18px;height:18px}
+.listen{font:700 .82rem/1 var(--body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;padding:7px 12px;cursor:pointer;justify-self:start;align-self:start;margin-top:4px}
+.listen[aria-pressed="true"]{background:var(--vetiver);border-color:var(--vetiver);color:#fff}
+.reading{outline:3px solid var(--focus);outline-offset:4px;border-radius:6px;background:color-mix(in srgb,var(--focus) 12%,transparent)}
+dialog#helpDlg{max-width:640px;width:calc(100% - 32px);border:0;border-radius:20px;padding:24px;background:var(--surface);color:var(--ink)}
+dialog#helpDlg::backdrop{background:rgba(0,0,0,.55)}
+dialog#helpDlg td{padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+dialog#helpDlg table{width:100%;border-collapse:collapse;margin:10px 0}
+kbd{font:700 .85em/1 var(--body);background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:3px 6px;white-space:nowrap}
+body.contrast{--ground:#fff;--surface:#fff;--surface-2:#fff;--ink:#000;--ink-soft:#000;--line:#000;--lagon:#000;--lagon-ink:#fff;--flamboyant:#A3300E;--flamboyant-ink:#fff;--flamboyant-soft:#fff;--vetiver:#1B5B4B}
+body.contrast .press-item, body.contrast .app, body.contrast .plan, body.contrast .step, body.contrast .steps, body.contrast form.card, body.contrast input, body.contrast .modcard, body.contrast details, body.contrast .paybar, body.contrast .webinar, body.contrast .a11y li, body.contrast .chip, body.contrast .pay li, body.contrast .inclus span{border:3px solid #000 !important;box-shadow:none !important}
+body.contrast .magnet{border:3px solid #000}
+body.contrast .btn-primary{background:#000 !important;color:#fff !important;border:3px solid #000 !important}
+body.contrast .btn-ghost{border-width:3px}
+body.contrast a{text-decoration:underline}
+body.contrast :focus-visible{outline:5px solid #000 !important;outline-offset:3px}
+body.contrast .coach-card::after{display:none}
+body.contrast .bully a.tile{border:3px solid #fff}
+/* menu mobile */
+.menu-btn{display:none;font:700 .92rem/1 var(--body);border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:10px 16px;cursor:pointer}
+.nav-actions{display:flex;align-items:center;gap:10px}
+@media (max-width:900px){
+  .menu-btn{display:inline-flex}
+  .nav{flex-wrap:wrap}
+  .nav ul.open{display:grid;order:3;width:100%;gap:0;padding:6px 0 10px;border-top:1px solid var(--line)}
+  .nav ul.open a{display:block;padding:12px 4px;font-size:1.05rem}
+}
+@media (max-width:520px){.nav-actions .btn{display:none}}
+/* urgence */
+.sos{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;border-radius:14px;background:var(--flamboyant-soft);font-size:.92rem;max-width:62ch}
+.sos strong{font-family:var(--display);font-size:1.05rem}
+.sos a{font-weight:700}
+.bully .numbers{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.bully .numbers span{padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.92rem}
+.bully .numbers b{font-family:var(--display);font-size:1.3rem;margin-right:6px}
+/* formulaire */
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+input[aria-invalid="true"]{border-color:var(--flamboyant);box-shadow:0 0 0 2px var(--flamboyant-soft)}
+.form-err{background:var(--flamboyant-soft);color:var(--ink);border-left:4px solid var(--flamboyant);border-radius:12px;padding:14px;font-weight:700}
+.btn[disabled]{opacity:.6;cursor:progress}
+.form-note{font-size:.82rem;color:var(--ink-soft)}
+/* barre d'action mobile */
+.stickycta{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--ground) 94%,transparent);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+.stickycta .btn{width:100%;justify-content:center}
+@media (max-width:760px){.stickycta.show{display:block}body{padding-bottom:0}footer{padding-bottom:84px}}
+/* pages légales */
+dialog.legal{max-width:720px;width:calc(100% - 32px);max-height:85vh;border:0;border-radius:20px;padding:24px;background:var(--surface);color:var(--ink)}
+dialog.legal::backdrop{background:rgba(0,0,0,.55)}
+dialog.legal h3{margin-top:18px}
+dialog.legal p,dialog.legal li{color:var(--ink-soft);margin-top:6px}
+dialog.legal .todo{background:var(--flamboyant-soft);color:var(--ink);border-radius:6px;padding:0 4px}
+footer button.linklike{font:inherit;background:none;border:0;padding:0;color:var(--ink-soft);text-decoration:underline;cursor:pointer}
+.rdv{margin-top:18px}
+/* modules */
+.modgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+@media (max-width:1000px){.modgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.modgrid{grid-template-columns:1fr}}
+.modcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;display:grid;gap:6px;align-content:start}
+.modcard .k{display:flex;justify-content:space-between;font-size:.8rem;color:var(--ink-soft)}
+.modcard h4{margin:0;font-family:var(--display);font-size:1.08rem;line-height:1.2}
+.modcard p{font-size:.92rem;color:var(--ink-soft)}
+.etape-t{display:flex;align-items:baseline;gap:12px;margin-top:34px}
+.etape-t .n{font-family:var(--display);font-weight:800;font-size:2.2rem;color:var(--flamboyant);line-height:1}
+.inclus{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.inclus span{font-size:.85rem;font-weight:700;padding:6px 12px;border-radius:99px;background:var(--surface-2)}
+.cta-formation{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px;border-radius:24px;background:var(--lagon);color:var(--lagon-ink)}
+.cta-formation p{opacity:.9}
+.cta-formation .btn{font-size:1.1rem;padding:17px 28px}
+.app .duo{display:grid;gap:10px}
+.app .duo .btn{justify-content:center;text-align:center}
+.pay-note{font-size:.85rem;color:var(--ink-soft)}
+.dl-group{display:grid;gap:10px}
+.dl-group .btn{justify-content:center}
+.toast{position:fixed;left:50%;width:max-content;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);max-width:min(92vw,560px);background:var(--ink);color:var(--ground);padding:14px 18px;border-radius:14px;font-weight:700;z-index:70;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+</style>
+
+<a class="skip" href="#top">Aller au contenu</a>
+<div class="a11ybar" role="region" aria-label="Accessibilité">
+  <div class="in">
+    <b>Accessibilité</b>
+    <button type="button" id="aMinus" aria-label="Réduire la taille du texte">A−</button>
+    <button type="button" id="aPlus" aria-label="Agrandir la taille du texte">A+</button>
+    <button type="button" id="contrastBtn" aria-pressed="false">Contraste renforcé</button>
+    <button type="button" id="audioBtn" aria-pressed="false" aria-controls="audioBar">Mode audio</button>
+    <button type="button" id="helpBtn" aria-haspopup="dialog">Aide et raccourcis</button>
+    <div class="audiobar" id="audioBar" hidden>
+      <button type="button" id="ttsRead">▶ Lire la page</button>
+      <button type="button" id="ttsPause">⏸ Pause</button>
+      <button type="button" id="ttsStop">⏹ Arrêter</button>
+      <label for="ttsRate">Vitesse <select id="ttsRate"><option value="0.75">Lente</option><option value="1" selected>Normale</option><option value="1.25">Rapide</option><option value="1.5">Très rapide</option></select></label>
+      <label for="optAnnounce"><input type="checkbox" id="optAnnounce" checked> Annonces vocales</label>
+      <label for="optFocus"><input type="checkbox" id="optFocus" checked> Lire l'élément sélectionné (Tab)</label>
+    </div>
+  </div>
+</div>
+<div class="wrap">
+<header class="site">
+  <nav class="nav wrap" aria-label="Navigation principale">
+    <a class="brand" href="#top"><b>Parent Leader</b><small>Méthode Houée · La Réunion</small></a>
+    <ul id="navList">
+      <li><a href="#guide">Guide gratuit</a></li>
+      <li><a href="#programme">Programme</a></li>
+      <li><a href="#harcelement">Harcèlement</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#coach">Votre coach</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navList">Menu</button>
+      <a class="btn btn-primary" href="#guide">Recevoir le guide</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h-hero">
+  <div class="stack">
+    <p class="eyebrow">Parents d'ados de 10 à 17 ans · La Réunion et à distance</p>
+    <h1 id="h-hero">Retrouver le lien avec votre ado, <em>sans renoncer au cadre.</em></h1>
+    <p class="lead">Votre ado se ferme, les disputes s'enchaînent, ou vous sentez qu'il se passe quelque chose au collège. Parent Leader vous aide à comprendre ce qu'il vit et à reprendre le dialogue, calmement et avec des repères clairs.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#guide">Recevoir le guide gratuit →</a>
+      <a class="btn btn-ghost" href="#webinaire">Voir le webinaire</a>
+    </div>
+    <p class="sos"><strong>Votre ado est harcelé en ce moment ?</strong> <span>3020 (harcèlement à l'école) · 3018 (cyberharcèlement) · gratuits.</span> <a href="#harcelement">Que faire d'abord →</a></p>
+    <div class="proofline" aria-label="Repères">
+      <span>Vu sur Réunion La 1ère</span>
+      <span>Auteur publié</span>
+      <span>Coach certifié RNCP 6</span>
+      <span>Applis accessibles aux aveugles</span>
+    </div>
+  </div>
+
+  <aside class="coach-card" aria-label="Votre coach">
+    <div class="who">
+      <div class="monogram" aria-hidden="true">JMH</div>
+      <div><b>Jean-Michel Houée</b><span>Coach parental · Éducateur spécialisé</span></div>
+    </div>
+    <ul>
+      <li><strong>25 ans</strong><span>d'accompagnement de jeunes et de familles dans le médico-social</span></li>
+      <li><strong>410 h</strong><span>de coaching individuel et collectif réalisées</span></li>
+      <li><strong>RNCP 6</strong><span>Coach professionnel certifié (Haute École de Coaching), éducateur spécialisé diplômé d'État</span></li>
+    </ul>
+  </aside>
+</section>
+</main>
+</div>
+
+<section class="press" aria-labelledby="h-press">
+  <div class="wrap">
+    <p class="eyebrow">Ils en parlent</p>
+    <h2 id="h-press">Un travail reconnu sur le terrain réunionnais</h2>
+    <div class="grid">
+      <a class="press-item" id="lien-reportage" href="https://youtu.be/yjJWL2Vr7Us" target="_blank" rel="noopener">
+        <div class="tv" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#EAF3F2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M8 2l4 4 4-4"/><path d="M10 10l5 2.5-5 2.5z" fill="#E86A43" stroke="none"/></svg>
+        </div>
+        <div>
+          <span class="tag">Reportage TV · Réunion La 1ère</span>
+          <h3>Des ateliers PNL contre le harcèlement au collège Levavasseur</h3>
+          <p class="muted">Réunion La 1ère a suivi les ateliers menés avec des collégiens pour prévenir le harcèlement et renforcer la confiance en soi.</p>
+          <span class="go">Voir le reportage sur YouTube →</span>
+        </div>
+      </a>
+      <a class="press-item" href="https://www.amazon.fr/dp/B0FBM9F58Q" target="_blank" rel="noopener">
+        <div class="cover" aria-hidden="true"><b>Conquérir le Monde</b><span>J.-M. Houée</span></div>
+        <div>
+          <span class="tag">Livre · Disponible sur Amazon</span>
+          <h3>« Conquérir le Monde : stratégies pour devenir un leader adolescent »</h3>
+          <p class="muted">Un livre écrit pour les ados, que les parents peuvent lire avec eux pour ouvrir la conversation sur la confiance, les choix et l'affirmation de soi.</p>
+          <span class="go">Voir le livre sur Amazon →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<section aria-labelledby="h-pain">
+  <p class="eyebrow">Vous vous reconnaissez ?</p>
+  <h2 id="h-pain">Quand la relation se tend, vous avez besoin de repères, pas de perfection.</h2>
+  <div class="cols3">
+    <div class="pain"><p class="q">« Il ne me parle plus. »</p><p class="muted">Repérer ce qui ferme la porte et retrouver des moments d'échange qui ne tournent pas à l'interrogatoire.</p></div>
+    <div class="pain"><p class="q">« Tout finit en dispute. »</p><p class="muted">Sortir du bras de fer : identifier ce qui déclenche les tensions et choisir une réponse plus utile que la réaction automatique.</p></div>
+    <div class="pain"><p class="q">« Je sens que ça ne va pas au collège. »</p><p class="muted">Reconnaître les signaux d'un harcèlement, savoir comment en parler avec votre ado et avec l'établissement.</p></div>
+  </div>
+</section>
+
+<section id="guide" aria-labelledby="h-guide">
+  <div class="magnet">
+    <div class="stack">
+      <p class="eyebrow">Ressource gratuite</p>
+      <h2 id="h-guide">5 erreurs qui fragilisent le dialogue avec votre ado</h2>
+      <p class="lead" style="color:var(--ink)">Un guide court pour prendre du recul, repérer les automatismes qui bloquent les échanges et repartir avec des phrases à essayer dès ce soir.</p>
+      <ul class="checks">
+        <li>3 pages, lecture en 10 minutes</li>
+        <li>Exemples de phrases concrètes</li>
+        <li>Sans culpabilisation</li>
+        <li>En bonus : le livret de 19 pages</li>
+      </ul>
+    </div>
+    <form class="card" id="lead-form" novalidate aria-describedby="form-msg">
+      <h3>Recevoir le guide</h3>
+      <div class="stack" style="gap:6px"><label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" autocomplete="given-name" placeholder="Votre prénom" required aria-required="true"></div>
+      <div class="stack" style="gap:6px"><label for="email">Email</label><input id="email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" placeholder="vous@exemple.re" required aria-required="true"></div>
+      <label class="consent" for="consent"><input id="consent" name="consent" type="checkbox" required aria-required="true"><span>J'accepte de recevoir ce guide puis des conseils Parent Leader par email. Désinscription en un clic à tout moment.</span></label>
+      <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn btn-primary" id="lead-btn" type="submit" style="justify-content:center">Recevoir le guide →</button>
+      <p class="form-note">Vos données ne servent qu'à vous envoyer le guide et les conseils Parent Leader. <button type="button" class="linklike" data-legal="privacy">Confidentialité</button></p>
+      <p id="form-msg" class="form-ok" role="status" hidden></p>
+      <div class="dl-group" id="guide-dl" hidden>
+        <a class="btn btn-primary" href="guide-5-erreurs-ado-jean-michel-houee.pdf" download="Guide-5-erreurs-ado-Jean-Michel-Houee.pdf" type="application/pdf">⬇ Télécharger le guide « 5 erreurs » (PDF, 3 pages)</a>
+        <a class="btn btn-ghost" href="livret-adolescence-metamorphose-jean-michel-houee.pdf" download="Livret-L-adolescence-une-metamorphose-a-celebrer.pdf" type="application/pdf">⬇ Télécharger le livret offert (PDF, 19 pages)</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="programme" aria-labelledby="h-prog">
+  <p class="eyebrow">La formation Parent Leader</p>
+  <h2 id="h-prog">12 modules en 3 étapes, à suivre à votre rythme</h2>
+  <p class="lead" style="margin-top:14px">Chaque module se suit en 20 à 30 minutes, depuis votre téléphone ou votre ordinateur.</p>
+  <div class="inclus" aria-label="Inclus dans chaque module"><span>Contenu clair et illustré d'exemples</span><span>Exercice interactif</span><span>Quiz corrigé</span><span>Défi de la semaine</span><span>Journal personnel</span><span>Mode audio et contraste renforcé</span><span>Attestation de fin de parcours</span></div>
+  <div class="etape-t"><span class="n" aria-hidden="true">1</span><div><h3>Étape 1 · Comprendre</h3><p class="muted">Ce qui se passe dans la tête et le corps d'un ado.</p></div></div>
+  <div class="modgrid">
+    <article class="modcard"><span class="k"><span>Module 1</span><span>25 min</span></span><h4>Le cerveau de l'ado</h4><p>Pourquoi votre ado connaît la règle… et ne la respecte pas sous le coup de l'émotion. Le sommeil, grand oublié.</p></article>
+    <article class="modcard"><span class="k"><span>Module 2</span><span>25 min</span></span><h4>Les besoins émotionnels</h4><p>Repérer le besoin caché derrière un comportement difficile, pour répondre au besoin plutôt qu'au symptôme.</p></article>
+    <article class="modcard"><span class="k"><span>Module 3</span><span>20 min</span></span><h4>L'identité en construction</h4><p>Accueillir les essais et les changements : distinguer ce qui relève du goût et ce qui relève de la sécurité.</p></article>
+    <article class="modcard"><span class="k"><span>Module 4</span><span>25 min</span></span><h4>Autonomie et limites</h4><p>Être à la fois chaleureux et exigeant. Transmettre l'autonomie par paliers, sans lâcher.</p></article>
+  </div>
+  <div class="etape-t"><span class="n" aria-hidden="true">2</span><div><h3>Étape 2 · Communiquer</h3><p class="muted">Retrouver un dialogue calme, même quand ça chauffe.</p></div></div>
+  <div class="modgrid">
+    <article class="modcard"><span class="k"><span>Module 5</span><span>25 min</span></span><h4>L'écoute active</h4><p>Reformuler, nommer l'émotion, poser des questions ouvertes : écouter pour comprendre, pas pour répondre.</p></article>
+    <article class="modcard"><span class="k"><span>Module 6</span><span>25 min</span></span><h4>Exprimer sans blesser</h4><p>Le message-je et la méthode OSBD pour dire ce qui ne va pas sans attaquer.</p></article>
+    <article class="modcard"><span class="k"><span>Module 7</span><span>30 min</span></span><h4>Gérer les conflits</h4><p>La pause qui protège, la méthode sans perdant en 6 étapes, et l'art de réparer après la tempête.</p></article>
+    <article class="modcard"><span class="k"><span>Module 8</span><span>20 min</span></span><h4>Renforcer la confiance</h4><p>Construire une relation où votre ado ose venir vous parler, y compris en cas de harcèlement.</p></article>
+  </div>
+  <div class="etape-t"><span class="n" aria-hidden="true">3</span><div><h3>Étape 3 · Agir</h3><p class="muted">Poser un cadre cohérent qui tient dans la durée.</p></div></div>
+  <div class="modgrid">
+    <article class="modcard"><span class="k"><span>Module 9</span><span>25 min</span></span><h4>Limites bienveillantes</h4><p>Peu de règles mais claires, des conséquences logiques plutôt que des punitions, sans crier.</p></article>
+    <article class="modcard"><span class="k"><span>Module 10</span><span>30 min</span></span><h4>Gestion des écrans</h4><p>Les repères des experts, le sommeil d'abord, et un contrat familial des écrans construit ensemble.</p></article>
+    <article class="modcard"><span class="k"><span>Module 11</span><span>25 min</span></span><h4>Soutenir la motivation</h4><p>Nourrir la motivation interne : valoriser l'effort, donner du sens, avancer à petits pas.</p></article>
+    <article class="modcard"><span class="k"><span>Module 12</span><span>20 min</span></span><h4>Pérenniser la relation</h4><p>Ancrer les changements, prendre soin de vous, savoir demander de l'aide. Attestation de fin de parcours.</p></article>
+  </div>
+  <div class="cta-formation">
+    <div><h3 style="font-size:1.4rem">Prêt à retrouver le lien avec votre ado ?</h3><p>Les 12 modules · 97 € en paiement unique · accès immédiat par email après le paiement.</p></div>
+    <a class="btn btn-primary" href="#tarifs" data-pay="complet">Je veux ma formation →</a>
+  </div>
+</section>
+
+<section id="harcelement" aria-labelledby="h-bully">
+  <div class="bully">
+    <div class="stack">
+      <p class="eyebrow">Harcèlement scolaire</p>
+      <h2 id="h-bully">Votre enfant subit du harcèlement ? Vous n'êtes pas seul face à ça.</h2>
+      <p class="lead">C'est le cœur de mon travail : accompagner les parents pour qu'ils sachent quoi dire, quoi faire et comment soutenir leur ado sans l'exposer davantage.</p>
+      <div class="numbers" aria-label="Numéros d'aide gratuits">
+        <span><b>3020</b>Non au harcèlement (à l'école)</span>
+        <span><b>3018</b>Cyberharcèlement, 7 j/7</span>
+        <span><b>119</b>Enfance en danger</span>
+      </div>
+      <p class="urgence">Appels gratuits. Si votre enfant est en danger immédiat, appelez le 15 ou le 112.</p>
+    </div>
+    <div class="links">
+      <a class="tile" href="https://harcelement-prog-30jours.netlify.app/" target="_blank" rel="noopener"><b>Phénix 30 jours : essai gratuit →</b><span>Le programme quotidien pour votre enfant. Accessible aux personnes aveugles et malvoyantes.</span></a>
+      <a class="tile" href="https://parents-professionnels-ados-harcele.netlify.app/" target="_blank" rel="noopener"><b>Phénix Ado Console : essai gratuit →</b><span>10 séances pour l'ado, avec parents et pros. Accessible aux personnes aveugles et malvoyantes.</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="applications" aria-labelledby="h-apps">
+  <p class="eyebrow">Les applications Phénix</p>
+  <h2 id="h-apps">Deux outils numériques, pensés aussi pour les personnes aveugles et malvoyantes</h2>
+  <p class="lead" style="margin-top:16px">Conçues selon la Méthode Houée, elles prolongent le coaching à la maison. Toutes deux fonctionnent avec les lecteurs d'écran et proposent un mode audio.</p>
+  <div class="apps">
+    <article class="app">
+      <span class="for">Pour votre enfant · 30 jours</span>
+      <h3>Phénix 30 jours</h3>
+      <p class="muted">Un programme quotidien pour l'enfant qui vit du harcèlement ou une période difficile : exercices du jour, respirations guidées et baromètre de l'humeur pour suivre son évolution.</p>
+      <ul class="a11y" aria-label="Accessibilité">
+        <li>Lecteurs d'écran</li><li>Annonces vocales</li><li>Lecture à voix haute</li><li>Contraste renforcé</li><li>Taille du texte</li>
+      </ul>
+      <div class="duo">
+        <a class="btn btn-ghost" href="https://harcelement-prog-30jours.netlify.app/" target="_blank" rel="noopener">Essayer gratuitement le module 1</a>
+        <a class="btn btn-primary" href="#tarifs" data-pay="phenix30">Obtenir l'accès complet →</a>
+      </div>
+      <p class="pay-note">Paiement unique et sécurisé. Accès envoyé par email juste après le paiement.</p>
+    </article>
+    <article class="app">
+      <span class="for">Pour l'ado, avec parents et pros · 10 séances</span>
+      <h3>Phénix Ado Console</h3>
+      <p class="muted">Dix séances de 60 minutes en quatre étapes pour accompagner l'adolescent, avec les parents et les professionnels. Les données restent enregistrées sur l'appareil.</p>
+      <ul class="a11y" aria-label="Accessibilité">
+        <li>Lecteurs d'écran</li><li>Mode audio</li><li>Minuteur parlant</li><li>Raccourcis clavier</li><li>Contraste renforcé</li>
+      </ul>
+      <div class="duo">
+        <a class="btn btn-ghost" href="https://parents-professionnels-ados-harcele.netlify.app/" target="_blank" rel="noopener">Essayer gratuitement le module 1</a>
+        <a class="btn btn-primary" href="#tarifs" data-pay="console">Obtenir l'accès complet →</a>
+      </div>
+      <p class="pay-note">Paiement unique et sécurisé. Accès envoyé par email juste après le paiement.</p>
+    </article>
+  </div>
+  <div class="a11y-banner">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--vetiver)"><circle cx="12" cy="4.5" r="1.8"/><path d="M5 8.5l7 1.5 7-1.5"/><path d="M12 10v5l-3 6"/><path d="M12 15l3 6"/></svg>
+    <p><strong>Accessibilité :</strong> compatibles NVDA, JAWS, VoiceOver et TalkBack. Si vous utilisez déjà un lecteur d'écran, désactivez les annonces vocales de l'application pour éviter que les deux voix se superposent.</p>
+  </div>
+</section>
+
+<section id="coach" aria-labelledby="h-coach">
+  <div class="about">
+    <div class="stack" style="gap:24px">
+      <p class="eyebrow">Votre coach</p>
+      <h2 id="h-coach">Jean-Michel Houée</h2>
+      <p class="quote">Mon rôle n'est pas de vous dire quoi faire. C'est de vous aider à trouver ce qui marche avec votre ado.</p>
+      <p class="muted">Basé à Sainte-Clotilde, j'accompagne des jeunes et leurs familles depuis plus de 25 ans. J'utilise la PNL, l'écoute active et des questions qui vous aident à voir la situation autrement.</p>
+      <div class="actions"><a class="btn btn-ghost" href="https://www.amazon.fr/dp/B0FBM9F58Q" target="_blank" rel="noopener">Découvrir mon livre</a></div>
+    </div>
+    <dl class="creds">
+      <div><dt>Coaching</dt><dd>Coach professionnel certifié RNCP niveau 6, Haute École de Coaching · 410 h de coaching</dd></div>
+      <div><dt>Éducation</dt><dd>Éducateur spécialisé diplômé d'État (DEES) · 25 ans en établissement médico-social</dd></div>
+      <div><dt>Formation</dt><dd>Formateur professionnel d'adultes (TP FPA) · intervenant à l'IRTS Saint-Benoît</dd></div>
+      <div><dt>Terrain</dt><dd>Ateliers PNL anti-harcèlement au collège Levavasseur, <a href="https://youtu.be/yjJWL2Vr7Us" id="lien-reportage-2" target="_blank" rel="noopener">reportage Réunion La 1ère</a></dd></div>
+      <div><dt>Communication</dt><dd>LSF, LPC et communication alternative : accompagnement adapté aux familles concernées par un handicap sensoriel</dd></div>
+      <div><dt>Éthique</dt><dd>Déontologie du coaching ICF · confidentialité · non-jugement</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="webinaire" aria-labelledby="h-web" style="padding-top:0">
+  <div class="webinar">
+    <div class="stack" style="gap:12px;max-width:620px">
+      <p class="eyebrow">Webinaire gratuit</p>
+      <h2 id="h-web" style="font-size:clamp(1.5rem,3vw,2rem)">Créer une vraie relation de confiance avec votre ado en 30 jours</h2>
+      <div class="meta"><span class="chip">En direct</span><span class="chip">Heure de La Réunion</span><span class="chip">Questions-réponses</span><span class="chip">Replay envoyé aux inscrits</span></div>
+    </div>
+    <a class="btn btn-primary" id="webinar-cta" href="#guide">M'inscrire au webinaire →</a>
+  </div>
+</section>
+
+<section id="tarifs" aria-labelledby="h-tarifs">
+  <p class="eyebrow">Les formules</p>
+  <h2 id="h-tarifs">Choisir le niveau d'accompagnement qui vous convient</h2>
+  <div class="plans">
+    <div class="plan best"><span class="badge">Formation seule</span><h3>Formation Complète</h3><p class="muted">Le parcours entier, à suivre à votre rythme, sans coaching individuel.</p><p class="price">97 € <small>paiement unique</small></p><ul><li>Les 12 modules</li><li>Suivi de progression</li><li>Communauté privée de parents</li><li>Bonus gestion des écrans</li></ul><a class="btn btn-primary" href="#paiement" data-pay="complet">Choisir la formation</a></div>
+    <div class="plan"><span class="badge">Avec coaching</span><h3>Parent Leader</h3><p class="muted">La formation, plus 2 h de coaching individuel en visio avec Jean-Michel.</p><p class="price">297 € <small>paiement unique</small></p><ul><li>Les 12 modules</li><li><strong>2 h de coaching individuel en visio</strong>, sur votre situation</li><li>Lien de réservation de votre créneau envoyé après le paiement</li><li>Bonus écrans et méditation</li><li>Accès aux webinaires</li></ul><div class="stack" style="gap:10px;align-self:end"><a class="btn btn-primary" href="#paiement" data-pay="parentleader">Choisir Parent Leader</a></div></div>
+  </div>
+  <div class="paybar" id="paiement">
+    <p><strong>Paiement unique, sans abonnement.</strong> Aucun prélèvement ensuite.</p>
+    <ul class="pay" aria-label="Moyens de paiement acceptés">
+      <li>Paiement en ligne sécurisé</li><li>Accès par email après paiement</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="h-faq" style="padding-top:0">
+  <h2 id="h-faq" style="text-align:center">Questions fréquentes</h2>
+  <div class="faq">
+    <details><summary>À qui s'adresse Parent Leader ?</summary><p>Aux parents et beaux-parents d'adolescents de 10 à 17 ans qui veulent retrouver un dialogue plus serein et des repères concrets, en particulier quand leur enfant traverse une période difficile au collège ou au lycée.</p></details>
+    <details><summary>Mon enfant est harcelé. Par où commencer ?</summary><p>Commencez par écouter sans minimiser, puis contactez l'établissement. Le 3020 (harcèlement à l'école) et le 3018 (cyberharcèlement) sont gratuits et peuvent vous conseiller. Le coaching vous aide ensuite à tenir dans la durée et à soutenir votre ado sans vous épuiser.</p></details>
+    <details><summary>Les séances ont-elles lieu à La Réunion ?</summary><p>Oui. Les modules sont en ligne et le suivi se fait en visio ou en présentiel à La Réunion. Les horaires sont calés sur l'heure de La Réunion.</p></details>
+    <details><summary>Puis-je suivre le programme à mon rythme ?</summary><p>Oui. Les modules sont organisés par thème pour avancer progressivement, selon votre situation familiale.</p></details>
+    <details><summary>Que comprend la formule avec coaching à 297 € ?</summary><p>Les 12 modules, plus 2 heures de coaching individuel en visio avec Jean-Michel Houée. Après le paiement, vous recevez par email le lien pour choisir votre créneau dans l'agenda en ligne. La formule à 97 € donne accès aux 12 modules, sans coaching individuel.</p></details>
+    <details><summary>Comment se passe le paiement ?</summary><p>Vous payez une seule fois, en ligne, de façon sécurisée. Il n'y a pas d'abonnement ni de prélèvement ensuite. Vous recevez vos accès par email juste après le paiement.</p></details>
+    <details><summary>Le webinaire est-il payant ?</summary><p>Non. Il est gratuit sur inscription. Vous recevez le lien et le replay par email.</p></details>
+    <details><summary>Le programme remplace-t-il un suivi médical ou psychologique ?</summary><p>Non. Parent Leader est un accompagnement éducatif et de coaching. En cas de souffrance importante ou de risque, rapprochez-vous d'un médecin ou d'un psychologue.</p></details>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="h-final" style="padding-top:0">
+  <h2 id="h-final">Commencer par un premier pas simple</h2>
+  <p class="lead">Téléchargez le guide gratuit ou inscrivez-vous au webinaire pour découvrir l'approche Parent Leader.</p>
+  <div class="actions" style="justify-content:center"><a class="btn btn-primary" href="#guide">Recevoir le guide</a><a class="btn btn-ghost" href="#webinaire">Voir le webinaire</a></div>
+</section>
+
+<footer>
+  <span>© 2026 Parent Leader · Méthode Houée · Sainte-Clotilde, La Réunion</span>
+  <span><a href="https://www.amazon.fr/dp/B0FBM9F58Q" target="_blank" rel="noopener">Le livre</a> · <a href="https://youtu.be/yjJWL2Vr7Us" target="_blank" rel="noopener">Le reportage</a> · <a href="https://harcelement-prog-30jours.netlify.app/" target="_blank" rel="noopener">Phénix 30 jours</a> · <a href="https://parents-professionnels-ados-harcele.netlify.app/" target="_blank" rel="noopener">Phénix Ado Console</a> · <button type="button" class="linklike" data-legal="legal">Mentions légales</button> · <button type="button" class="linklike" data-legal="privacy">Confidentialité</button></span>
+</footer>
+</div>
+
+<dialog id="helpDlg" aria-labelledby="helpTitle">
+  <h2 id="helpTitle" style="font-size:1.5rem">Accessibilité et raccourcis</h2>
+  <p style="margin-top:8px">Ce site est utilisable avec les lecteurs d'écran (NVDA, JAWS, VoiceOver, TalkBack), au clavier seul, et en mode audio pour les personnes malvoyantes qui n'utilisent pas de lecteur d'écran.</p>
+  <table>
+    <tr><td><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>A</kbd></td><td>Activer ou couper le mode audio</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>L</kbd></td><td>Lire la page à voix haute</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>S</kbd></td><td>Arrêter la lecture (ou touche Échap)</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>C</kbd></td><td>Contraste renforcé</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>+</kbd> / <kbd>−</kbd></td><td>Agrandir / réduire le texte</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>G</kbd></td><td>Aller au guide gratuit</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>F</kbd></td><td>Aller à la formation (12 modules)</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>H</kbd></td><td>Ouvrir cette aide</td></tr>
+  </table>
+  <p>Chaque grande partie de la page a un bouton « Écouter cette partie ». <strong>Vous utilisez déjà un lecteur d'écran ?</strong> Laissez le mode audio coupé pour éviter que deux voix se superposent.</p>
+  <div class="actions" style="margin-top:14px"><button type="button" class="btn btn-primary" id="helpClose">Fermer</button></div>
+</dialog>
+
+<dialog class="legal" id="legalDlg" aria-labelledby="legalTitle">
+  <div id="legal-legal" hidden>
+    <h2 id="legalTitle" style="font-size:1.5rem">Mentions légales</h2>
+    <p><span class="todo">À compléter avant la mise en ligne définitive.</span></p>
+    <h3>Éditeur</h3>
+    <p>Jean-Michel Houée, coach professionnel · <span class="todo">statut juridique, SIRET, adresse du siège</span> · Sainte-Clotilde, La Réunion.</p>
+    <p>Contact : <span class="todo">adresse email professionnelle</span></p>
+    <h3>Hébergement</h3>
+    <p><span class="todo">Nom et adresse de l'hébergeur du site</span></p>
+    <h3>Propriété intellectuelle</h3>
+    <p>Les textes, guides et contenus de formation sont la propriété de leur auteur. Toute reproduction sans accord écrit est interdite.</p>
+    <h3>Nature de l'accompagnement</h3>
+    <p>Parent Leader est un accompagnement éducatif et de coaching. Il ne remplace ni un suivi médical, ni un suivi psychologique.</p>
+  </div>
+  <div id="legal-privacy" hidden>
+    <h2 style="font-size:1.5rem">Confidentialité</h2>
+    <p><span class="todo">Texte à faire valider avant la mise en ligne définitive.</span></p>
+    <h3>Données collectées</h3>
+    <p>Prénom et adresse email, uniquement si vous remplissez le formulaire du guide gratuit.</p>
+    <h3>Pourquoi</h3>
+    <p>Pour vous envoyer le guide, le livret offert, puis des conseils Parent Leader. Vous pouvez vous désinscrire à tout moment depuis chaque email.</p>
+    <h3>Vos droits</h3>
+    <p>Accès, rectification, suppression : écrivez à <span class="todo">adresse email de contact</span>. Vos données ne sont pas revendues.</p>
+    <h3>Sur cette page</h3>
+    <p>Vos réglages d'accessibilité (taille du texte, contraste, mode audio) sont mémorisés uniquement dans votre navigateur.</p>
+  </div>
+  <div class="actions" style="margin-top:18px"><button type="button" class="btn btn-primary" id="legalClose">Fermer</button></div>
+</dialog>
+<div class="stickycta" id="stickyCta"><a class="btn btn-primary" href="#guide">Recevoir le guide gratuit →</a></div>
+<div id="live" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"></div>
+
+<script>
+/* ===== À COMPLÉTER : vos liens de paiement (Stripe, PayPal ou System.io) =====
+   Collez entre les guillemets l'adresse de la page de paiement de chaque offre.
+   Dans Stripe (Payment Link) ou System.io, réglez la page après paiement sur :
+   https://formation-parents-leader.netlify.app  (ou sur merci.html de ce site). */
+var PAIEMENT = {
+  complet:      "https://coachhoueejm1210.systeme.io/3895d328",   // Formation complète 12 modules - 97 € (bouton « Je veux ma formation »)
+  parentleader: "https://coachhoueejm1210.systeme.io/772f7e12-2cd30d4b",   // Formule Parent Leader - 297 €
+  phenix30:     "",   // Phénix 30 jours - accès complet
+  console:      ""    // Phénix Ado Console - accès complet
+};
+var FORMATION_URL = "https://formation-parents-leader.netlify.app";
+/* ===== Autres réglages (facultatifs) =====
+   LEAD_ENDPOINT : adresse qui reçoit prénom + email (formulaire System.io, Brevo, Formspree...).
+   Tant qu'elle est vide, le formulaire donne accès aux PDF mais NE CONSERVE AUCUN email.
+   WEBINAIRE_URL : page d'inscription au webinaire (sinon le bouton mène au formulaire du guide).
+   RDV_URL : agenda de réservation d'un échange découverte (Calendly, etc.). */
+var LEAD_ENDPOINT = "";
+var WEBINAIRE_URL = "";
+var RDV_URL = "";   /* l'appel se réserve dans l'offre à 297 € (lien Calendly intégré) */
+</script>
+<script>
+(function(){
+  var f=document.getElementById('lead-form'), msg=document.getElementById('form-msg'), btn=document.getElementById('lead-btn');
+  function fail(text, field){ msg.className='form-err'; msg.textContent=text; msg.hidden=false;
+    [f.prenom,f.email,f.consent].forEach(function(i){ i.removeAttribute('aria-invalid'); });
+    if(field){ field.setAttribute('aria-invalid','true'); field.focus(); }
+    say(text); }
+  function success(p){ msg.className='form-ok'; msg.textContent="Merci "+p+" ! Votre guide et votre livret sont prêts : téléchargez-les ci-dessous.";
+    msg.hidden=false; document.getElementById('guide-dl').hidden=false; say(msg.textContent);
+    var first=document.querySelector('#guide-dl a'); if(first) first.focus(); }
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var p=f.prenom.value.trim(), m=f.email.value.trim();
+    if(f.website.value) return;
+    if(!p) return fail("Indiquez votre prénom.", f.prenom);
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m)) return fail("Indiquez une adresse email valide, par exemple prenom@exemple.re.", f.email);
+    if(!f.consent.checked) return fail("Cochez la case d'accord pour recevoir le guide.", f.consent);
+    [f.prenom,f.email,f.consent].forEach(function(i){ i.removeAttribute('aria-invalid'); });
+    if(!LEAD_ENDPOINT){ success(p); return; }
+    btn.disabled=true;
+    fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); success(p); })
+      .catch(function(){ fail("L'envoi n'a pas abouti. Vérifiez votre connexion et réessayez dans un instant.", f.email); })
+      .then(function(){ btn.disabled=false; });
+  });
+})();
+
+/* ===== Paiement ===== */
+(function(){
+  document.querySelectorAll('[data-pay]').forEach(function(a){
+    var url = PAIEMENT[a.dataset.pay];
+    if(url){ a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.removeAttribute('data-pending'); }
+    else { a.setAttribute('data-pending','1'); }
+  });
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-pay][data-pending]'); if(!a) return;
+    e.preventDefault();
+    toast("Le paiement en ligne ouvre très bientôt. Laissez votre email dans le formulaire du guide pour être prévenu en premier.");
+    var t = document.getElementById('prenom'); if(t){ document.getElementById('guide').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}); setTimeout(function(){ t.focus(); }, 500); }
+  });
+})();
+function toast(t){ var el = document.createElement('div'); el.className='toast'; el.setAttribute('role','status'); el.textContent=t; document.body.appendChild(el); say(t); setTimeout(function(){ el.remove(); }, 6000); }
+
+/* ===== Accessibilité : taille, contraste, audio ===== */
+var A = { fs:17, contrast:false, audio:false, rate:1, announce:true, focusRead:true };
+try{ Object.assign(A, JSON.parse(localStorage.getItem('pl_a11y')||'{}')); }catch(e){}
+function saveA(){ try{ localStorage.setItem('pl_a11y', JSON.stringify(A)); }catch(e){} }
+var $ = function(s){ return document.querySelector(s); };
+function applyA(){
+  document.documentElement.style.fontSize = A.fs+'px';
+  document.body.classList.toggle('contrast', !!A.contrast);
+  $('#contrastBtn').setAttribute('aria-pressed', A.contrast?'true':'false');
+  $('#audioBtn').setAttribute('aria-pressed', A.audio?'true':'false');
+  $('#audioBar').hidden = !A.audio;
+  $('#ttsRate').value = String(A.rate); $('#optAnnounce').checked = !!A.announce; $('#optFocus').checked = !!A.focusRead;
+}
+function live(t){ var l=$('#live'); l.textContent=''; setTimeout(function(){ l.textContent=t; }, 30); }
+function say(t){ live(t); if(A.audio && A.announce) speak(t); }
+
+var hasTTS = ('speechSynthesis' in window), frVoice=null, paused=false, readingEl=null;
+function pickVoice(){ if(!hasTTS) return; var vs=speechSynthesis.getVoices(); frVoice = vs.filter(function(v){ return /^fr[-_]FR/i.test(v.lang); })[0] || vs.filter(function(v){ return /^fr/i.test(v.lang); })[0] || null; }
+if(hasTTS){ pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
+function chunks(text){ var parts=String(text).replace(/\s+/g,' ').match(/[^.!?…:;]+[.!?…:;»"]*\s*/g)||[text], out=[], cur=''; parts.forEach(function(p){ if((cur+p).length>220){ if(cur) out.push(cur); cur=p; } else cur+=p; }); if(cur.trim()) out.push(cur); return out; }
+function clearReading(){ if(readingEl){ readingEl.classList.remove('reading'); readingEl=null; } }
+function speak(text, o){ o=o||{}; if(!hasTTS||!text) return; if(!o.queue){ speechSynthesis.cancel(); clearReading(); } paused=false;
+  var cs=chunks(text); cs.forEach(function(c,i){ var u=new SpeechSynthesisUtterance(c); u.lang='fr-FR'; if(frVoice) u.voice=frVoice; u.rate=+A.rate||1;
+    if(i===0 && o.el){ u.onstart=function(){ clearReading(); readingEl=o.el; readingEl.classList.add('reading'); readingEl.scrollIntoView({block:'center',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}); }; }
+    if(i===cs.length-1){ u.onend=function(){ if(o.el && readingEl===o.el) clearReading(); if(o.done) o.done(); }; }
+    speechSynthesis.speak(u); }); }
+function stopSpeak(){ if(hasTTS) speechSynthesis.cancel(); paused=false; clearReading(); document.querySelectorAll('.listen[aria-pressed="true"]').forEach(function(b){ b.setAttribute('aria-pressed','false'); }); }
+function readBlocks(els){ stopSpeak(); var i=0; (function next(){ if(i>=els.length) return; var el=els[i++]; var t=(el.innerText||'').trim(); if(!t || el.offsetParent===null){ next(); return; } speak(t,{queue:true,el:el,done:next}); })(); }
+function textBlocks(root){ return Array.prototype.slice.call(root.querySelectorAll('h1,h2,h3,h4,p,li,dt,dd,summary,.tag')).filter(function(el){ return !el.closest('.a11ybar') && !el.closest('dialog') && !el.closest('.listen') && !el.closest('a.btn') && !(el.parentElement && el.parentElement.closest('li,p,h1,h2,h3,h4,dd')); }); }
+function readPage(){ readBlocks(textBlocks(document.body).filter(function(el){ return !el.closest('header.site') && !el.closest('footer'); })); }
+function accText(el){ if(!el || el===document.body) return ''; var t=el.getAttribute('aria-label')||'';
+  if(!t && el.tagName==='INPUT' && el.type!=='checkbox'){ var lb=document.querySelector('label[for="'+el.id+'"]'); t='Champ '+(lb?lb.innerText:'')+'. '+(el.value||''); }
+  if(!t && el.tagName==='INPUT' && el.type==='checkbox'){ t=((el.closest('label')||{}).innerText||'')+(el.checked?', coché':', non coché'); }
+  if(!t && el.tagName==='SELECT'){ t='Vitesse de lecture : '+el.options[el.selectedIndex].text; }
+  if(!t) t=(el.innerText||'').trim().slice(0,300);
+  if(el.hasAttribute('download')) t+='. Téléchargement du fichier PDF.';
+  if(el.target==='_blank' && !el.hasAttribute('download')) t+='. S\'ouvre dans un nouvel onglet.';
+  if(el.getAttribute('aria-pressed')==='true') t+=', activé';
+  return t; }
+document.addEventListener('focusin', function(e){ if(A.audio && A.focusRead){ var t=accText(e.target); if(t) speak(t); } });
+
+/* boutons « Écouter cette partie » ajoutés à chaque section */
+document.querySelectorAll('main section, section.press, .wrap > section').forEach(function(sec, i){
+  var h = sec.querySelector('h1, h2'); if(!h || sec.querySelector(':scope .listen')) return;
+  var b = document.createElement('button'); b.type='button'; b.className='listen'; b.setAttribute('aria-pressed','false');
+  b.textContent = '🔊 Écouter cette partie'; b.setAttribute('aria-label','Écouter la partie : '+h.innerText);
+  h.insertAdjacentElement('afterend', b);
+  b.addEventListener('click', function(){ var on=b.getAttribute('aria-pressed')!=='true'; stopSpeak(); if(on){ b.setAttribute('aria-pressed','true'); readBlocks(textBlocks(sec)); } });
+});
+
+function toggleAudio(){ A.audio=!A.audio; applyA(); saveA();
+  if(A.audio){ if(!hasTTS){ live("La lecture vocale n'est pas disponible dans ce navigateur. Essayez Chrome, Edge ou Safari."); return; } speak("Mode audio activé. Appuyez sur Alt, Majuscule, L pour écouter la page, ou utilisez les boutons Écouter cette partie. Alt, Majuscule, H pour l'aide."); }
+  else { stopSpeak(); live('Mode audio désactivé.'); } }
+$('#aPlus').onclick=function(){ A.fs=Math.min(24,A.fs+1); applyA(); saveA(); say('Texte agrandi'); };
+$('#aMinus').onclick=function(){ A.fs=Math.max(15,A.fs-1); applyA(); saveA(); say('Texte réduit'); };
+$('#contrastBtn').onclick=function(){ A.contrast=!A.contrast; applyA(); saveA(); say(A.contrast?'Contraste renforcé activé.':'Contraste renforcé désactivé.'); };
+$('#audioBtn').onclick=toggleAudio;
+$('#ttsRead').onclick=readPage;
+$('#ttsPause').onclick=function(){ if(!hasTTS) return; if(paused){ speechSynthesis.resume(); paused=false; this.textContent='⏸ Pause'; } else { speechSynthesis.pause(); paused=true; this.textContent='▶ Reprendre'; } };
+$('#ttsStop').onclick=stopSpeak;
+$('#ttsRate').onchange=function(){ A.rate=+this.value; saveA(); speak('Vitesse '+this.options[this.selectedIndex].text); };
+$('#optAnnounce').onchange=function(){ A.announce=this.checked; saveA(); };
+$('#optFocus').onchange=function(){ A.focusRead=this.checked; saveA(); };
+var dlg=$('#helpDlg');
+function openHelp(){ if(dlg.showModal) dlg.showModal(); else dlg.setAttribute('open',''); $('#helpClose').focus(); if(A.audio) speak(dlg.innerText.replace(/Fermer\s*$/,'')); }
+$('#helpBtn').onclick=openHelp;
+$('#helpClose').onclick=function(){ stopSpeak(); if(dlg.close) dlg.close(); else dlg.removeAttribute('open'); $('#helpBtn').focus(); };
+var calm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function goTo(id){ var el=document.getElementById(id); if(el){ el.scrollIntoView({behavior:calm?'auto':'smooth'}); var h=el.querySelector('h2'); if(h){ h.setAttribute('tabindex','-1'); h.focus({preventScroll:true}); } say(h?h.innerText:''); } }
+document.addEventListener('keydown', function(e){
+  if(e.key==='Escape' && readingEl){ stopSpeak(); return; }
+  if(!(e.altKey && e.shiftKey)) return;
+  var k=(e.code||'').replace('Key','');
+  var act={ A:toggleAudio, L:readPage, S:stopSpeak, H:openHelp, C:function(){ $('#contrastBtn').click(); }, G:function(){ goTo('guide'); }, F:function(){ goTo('programme'); },
+    Equal:function(){ $('#aPlus').click(); }, NumpadAdd:function(){ $('#aPlus').click(); }, Minus:function(){ $('#aMinus').click(); }, NumpadSubtract:function(){ $('#aMinus').click(); }, Digit6:function(){ $('#aMinus').click(); } }[k];
+  if(act){ e.preventDefault(); act(); }
+});
+/* ===== Menu mobile, barre d'action, pages légales, liens configurables ===== */
+(function(){
+  var mb=$('#menuBtn'), nl=$('#navList');
+  mb.addEventListener('click', function(){ var o=nl.classList.toggle('open'); mb.setAttribute('aria-expanded', o?'true':'false'); mb.textContent=o?'Fermer':'Menu'; });
+  nl.addEventListener('click', function(e){ if(e.target.closest('a')){ nl.classList.remove('open'); mb.setAttribute('aria-expanded','false'); mb.textContent='Menu'; } });
+
+  var sc=$('#stickyCta'), g=$('#guide'), hero=$('.hero'), seenGuide=false;
+  if('IntersectionObserver' in window){
+    var heroOut=false, guideIn=false;
+    function upd(){ sc.classList.toggle('show', heroOut && !guideIn); }
+    new IntersectionObserver(function(en){ heroOut=!en[0].isIntersecting; upd(); }).observe(hero);
+    new IntersectionObserver(function(en){ guideIn=en[0].isIntersecting; upd(); }).observe(g);
+  }
+
+  var ld=$('#legalDlg');
+  document.addEventListener('click', function(e){ var b=e.target.closest('[data-legal]'); if(!b) return;
+    ld.querySelectorAll('[id^="legal-"]').forEach(function(s){ s.hidden = s.id!=='legal-'+b.dataset.legal; });
+    if(ld.showModal) ld.showModal(); else ld.setAttribute('open',''); });
+  $('#legalClose').addEventListener('click', function(){ if(ld.close) ld.close(); else ld.removeAttribute('open'); });
+
+  if(WEBINAIRE_URL){ var w=$('#webinar-cta'); w.href=WEBINAIRE_URL; w.target='_blank'; w.rel='noopener'; }
+  if(RDV_URL){ var a=document.createElement('a'); a.className='btn btn-ghost rdv'; a.href=RDV_URL; a.target='_blank'; a.rel='noopener'; a.textContent='Réserver un échange découverte';
+    $('#coach .actions').appendChild(a); }
+})();
+applyA();
+</script>
