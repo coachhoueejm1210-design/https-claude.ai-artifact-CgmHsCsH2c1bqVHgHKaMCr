@@ -11,7 +11,7 @@
 - `WEBINAIRE_URL`, `RDV_URL` : facultatifs.
 
 ## Avant mise en ligne définitive
-Compléter les mentions légales et la politique de confidentialité (champs surlignés), vérifier les numéros 3020 / 3018 depuis La Réunion.
+Compléter les mentions légales et la politique de confidentialité (champs surlignés), le numéro d'aide affiché est le 3018 (numéro national unique depuis le 1er janvier 2024) : à revérifier de temps en temps.
 
 ## Mise à jour du site Netlify
 Déposer le contenu du dossier (index.html + les 2 PDF) dans Netlify, onglet « Deploys ». Le fichier `index.html` du dépôt est un fragment : l'envelopper dans `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>…</body></html>` avant le dépôt.

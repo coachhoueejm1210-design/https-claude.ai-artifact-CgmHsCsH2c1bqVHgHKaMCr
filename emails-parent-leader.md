@@ -31,7 +31,7 @@ Vous recevrez ensuite automatiquement le lien de connexion.
 
 Il n'y a pas de bonne ou de mauvaise réponse. Écrivez simplement ce qui vient, ou venez avec vos questions.
 
-Si votre ado vit une situation de harcèlement, vous pouvez aussi appeler dès maintenant le 3020 (harcèlement à l'école) ou le 3018 (cyberharcèlement). Ces appels sont gratuits.
+Si votre ado vit une situation de harcèlement, vous pouvez aussi appeler dès maintenant le 3018 (harcèlement et cyberharcèlement). Cet appel est gratuit.
 
 Un souci d'accès ou de réservation ? Répondez simplement à cet email.
 
@@ -126,7 +126,7 @@ Notez vos réponses dans un carnet. Vous pourrez y revenir dans une semaine pour
 Les modules de la formation restent à votre disposition : https://formation-parents-leader.netlify.app
 Je vous conseille de reprendre celui qui répond le mieux à ce que nous avons abordé.
 
-Si votre ado traverse une période de souffrance importante, n'hésitez pas à vous tourner vers un médecin ou un psychologue. Les numéros 3020 (harcèlement à l'école) et 3018 (cyberharcèlement) sont gratuits.
+Si votre ado traverse une période de souffrance importante, n'hésitez pas à vous tourner vers un médecin ou un psychologue. Le 3018 (harcèlement et cyberharcèlement) est gratuit.
 
 **Une invitation, sans obligation**
 Si cet accompagnement vous a été utile, vous pouvez, si vous le souhaitez, me dire en quelques lignes ce qu'il vous a apporté. Je ne publierai rien sans votre accord écrit, et jamais avec le nom de votre enfant. Votre réponse m'aide aussi à améliorer l'accompagnement.
